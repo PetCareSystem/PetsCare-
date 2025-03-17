@@ -8,6 +8,14 @@ package model;
  *
  * @author ThienThu
  */
-public class Customer {
+public class Customer extends User{
+
+    public Customer() {
+    }
+
+    public Customer(String firstName, String lastName, int id, String userName, String password, int phone, String gender) {
+        super(firstName, lastName, id, userName, password, phone, gender);
+    }
+    
     
 }
