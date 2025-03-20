@@ -20,12 +20,16 @@ public class employee extends User {
         this.age = age;
     }
 
-    public employee(double salary, double workingHours, int age, int userID, String userName, String password, String role) {
-        super(userID, userName, password, role);
-        this.salary = salary;
-        this.workingHours = workingHours;
-        this.age = age;
+    public employee() {
     }
+
+    public employee(String firstName, String lastName, int id, String userName, String password, int phone, String gender) {
+        super(firstName, lastName, id, userName, password, phone, gender);
+    }
+    
+    
+
+    
 
     public double getSalary() {
         return salary;
